@@ -24,6 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Righteous&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Red+Hat+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body
     style="
@@ -33,36 +38,44 @@
       background-attachment: fixed;
       background-size: cover;
       background-position: 50% 0%;
-      font-family: 'Righteous', sans-serif;
+      font-family: 'Red Hat Mono', sans-serif;
       font-stretch: extra-expanded;
     "
   >
-    <nav class="navbar-nav navbar-expand-lg navbar-dark bg-dark">
-      <div class="conainer-fluid">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="font-family: 'Luckiest Guy'"
+    >
+      <div class="container-fluid">
         <a
           class="navbar-brand display-1"
           href="./index.html"
           style="font-size: xx-large; color: #198754"
           ><img
-          src="https://cdn.discordapp.com/emojis/821070072391008316.gif?size=128&quality=lossless"
-          / class="mx-2 text-success" width="80" height="50">discord-trolling</a
+            src="https://cdn.discordapp.com/emojis/821070072391008316.gif?size=128&quality=lossless"
+            class="mx-2 text-success"
+            width="80"
+            height="50"
+          />discord-trolling</a
         >
-
         <button
-          class="navbar-toggler bg-success"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style="color: #198754; border-color: #198754; border-width: 3px"
+          style="
+            color: rgb(84, 142, 179);
+            border-color: #4a85c5;
+            border-width: 3px;
+          "
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto my-auto" style="font-size: x-large">
+          <ul class="navbar-nav ms-auto" style="font-size: x-large">
             <li class="nav-item">
               <a
                 class="nav-link active"
@@ -71,9 +84,10 @@
                 style="color: #198754"
                 >Home</a
               >
+            </li>
+            <li class="nav-item">
               <a
                 class="nav-link active"
-                aria-current="page"
                 href="./marketplace.html"
                 style="color: #198754"
                 >Plugins</a
@@ -85,12 +99,21 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="display-1 text-center pt-5 px-5 my-2 fw-bold text-success">
+      <div class="display-4 text-center pt-5 px-5 my-2 fw-bold text-success">
         discord-trolling
       </div>
 
-      <div class="display-5 text-center pt-5 px-5 my-2 fw-bold text-success">
-        A libary for making Discord bots easy
+      <div class="display-6 text-center pt-5 px-5 my-2 fw-bold text-success">
+        An ecosystem of tools for the Discord API
+      </div>
+
+      <div class="d-flex justify-content-center my-5">
+        <a
+          href="https://ferretcode.gitbook.io/discord-trolling/"
+          class="btn btn-success text-center d-flex justify-content-center"
+        >
+          <div class="display-6">Get Started</div>
+        </a>
       </div>
 
       <div class="container-fluid">
@@ -99,19 +122,6 @@
           style="border-radius: 20px"
           src="./svgs/index.js.svg"
           alt="discord-trolling basic setup"
-        />
-      </div>
-
-      <div class="display-3 text-center pt-5 px-5 my-2 fw-bold text-success">
-        Plugins
-      </div>
-
-      <div class="container-fluid">
-        <img
-          class="my-5 mx-auto d-block"
-          style="border-radius: 20px"
-          src="./svgs/plugin.js.svg"
-          alt="discord-trolling plugins"
         />
       </div>
     </div>
